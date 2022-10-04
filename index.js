@@ -4,8 +4,9 @@ const routerApi = require('./routes/index');
 const app = express();
 const port = 3000;
 
+routerApi(app);
+
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Example app listening at http://localhost:${port}`);
 });
-
-routerApi(app);
